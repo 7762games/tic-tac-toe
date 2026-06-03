@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<!--HTML Boilerplate by VS code--> 
 <html lang="en"> 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Document</title> 
-        <link rel="stylesheet" href="styles.css"> 
-    </head> 
-    <body> 
-        <div>
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tic-Tac-Toe</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+    <!-- The main board container -->
+    <div class="board">
+        <!-- Row 1 -->
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+            <img src="assets/X.svg" class="piece-overlay"> <!-- Example Overlay -->
         </div>
-        <div>
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
-        </div> 
-        <div>
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
-            <img src="assets/Square_1.svg" width="8.33%">
-        </div> 
-        <br>
-        <button onclick="">Reset</button>
-    </body> 
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+
+        <!-- Row 2 -->
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+
+        <!-- Row 3 -->
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+        <div class="cell">
+            <img src="assets/Square_1.svg" class="base-square">
+        </div>
+    </div>
+    <br>
+    <button onclick="">Reset</button>
+</body> 
 </html>
