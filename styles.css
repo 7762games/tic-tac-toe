@@ -4,13 +4,12 @@ body {
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 8.33vw);
+    grid-template-columns: repeat(3, 8.33%);
     gap: 0;
     justify-content: center;
 }
 
 .board img {
-    width: 8.33vw;
-    height: 8.33vw; /* keeps them square */
+    width: 8.33%;
     display: block;
 }
