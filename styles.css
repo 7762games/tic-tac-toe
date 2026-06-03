@@ -1,3 +1,31 @@
 body {
   font-family: sans-serif;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 25% divided by 3 columns = 8.33% per square */
+  width: 25%;                            /* Total board width relative to screen */
+  margin: 0 auto;                        /* Centers the board horizontally */
+}
+
+.cell {
+  position: relative;
+  display: flex;
+}
+
+.base-square {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.piece-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Makes X/O slightly smaller than the square box container */
+  height: auto;
+  z-index: 2;
+}
