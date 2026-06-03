@@ -2,10 +2,15 @@ body {
   font-family: sans-serif;
 }
 
-.row {
-  line-height: 0;
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 8.33vw);
+    gap: 0;
+    justify-content: center;
 }
 
-.grid {
-  display: block;
+.board img {
+    width: 8.33vw;
+    height: 8.33vw; /* keeps them square */
+    display: block;
 }
